@@ -11,8 +11,11 @@ used. In this example, geminabox's views have been restyled with
 
 ## Load geminabox as a gem
 
-The Geminabox functionality is added "gem 'geminabox' to the Gemfile. Visit
-the [Geminabox site](https://github.com/geminabox/geminabox) for details of how to use Geminabox.
+The Geminabox functionality is made available by adding
+
+  gem 'geminabox'
+
+to the Gemfile. 
 
 ## Configuration via config.ru
 
@@ -27,4 +30,8 @@ To customize the appearance of Geminabox, local locations are specified for the 
 
 Then the view and public files from the Geminabox folders, can be copied to the local 
 locations where they can be modified as desired.
+
+## Want to know more about Geminabox?
+
+Visit the [Geminabox site](https://github.com/geminabox/geminabox) 
 
