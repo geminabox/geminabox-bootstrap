@@ -11,12 +11,12 @@ used. In this example, geminabox's views have been restyled with
 
 ## Load geminabox as a gem
 
-The Geminabox functionality is added via the gem specified in the Gemfile. See
-the [Geminabox](https://github.com/geminabox/geminabox) for details of how to use Geminabox.
+The Geminabox functionality is added "gem 'geminabox' to the Gemfile. Visit
+the [Geminabox site](https://github.com/geminabox/geminabox) for details of how to use Geminabox.
 
 ## Configuration via config.ru
 
-When using the gem, the data folder needs to be specified in config.ru.
+When using the geminabox gem, the data folder needs to be specified in config.ru.
 
     Geminabox.data = 'path/to/local/data'
 
