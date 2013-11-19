@@ -13,7 +13,7 @@ used. In this example, geminabox's views have been restyled with
 
 The Geminabox functionality is made available by adding
 
-  gem 'geminabox'
+    gem 'geminabox'
 
 to the Gemfile. 
 
