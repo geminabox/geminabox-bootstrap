@@ -4,12 +4,12 @@
   <p>If you did not need any credentials to get to this page:</p>
 
 <pre>
-$ gem sources -a http://localhost:9293/
+$ gem sources -a <%= url '/' %>
 </pre>
 
   <p>If you needed some credentials to get to this page:</p>
 <pre>
-$ gem sources -a http://username:password@localhost:9293/
+$ gem sources -a <%= url.to_s.gsub('://','://username:password@') %>
 </pre>
 
   <p>Then:</p>
@@ -33,4 +33,4 @@ $ gem inabox my-gem-0.0.1.gem
   <button type="submit" class="btn btn-primary pull-left" value="Upload">
     <i class="icon-upload icon-white"></i> Upload
   </button>
-</form> 
+</form>

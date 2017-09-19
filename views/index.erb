@@ -30,6 +30,7 @@
     </table>
 <% else %>
     <p>No gems have been added to the Gem in a Box server yet.</p>
-    <h4><a href="/upload">Add/Upload a new Gem</a></h4>
+    <% if Geminabox.allow_upload %>
+      <h4><a href="/upload">Add/Upload a new Gem</a></h4>
+    <% end %>
 <% end %>
-

@@ -35,7 +35,9 @@
     <a class="brand" href="<%= url '/' %>">Gem in a Box</a>
     <ul class="nav">
       <li><a href="<%= url("/") %>">Home</a></li>
-      <li><a href="<%= url("/upload") %>">Upload</a></li>
+      <% if Geminabox.allow_upload %>
+        <li><a href="<%= url("/upload") %>">Upload</a></li>
+      <% end %>
     </ul>
   </div>
 </div>
