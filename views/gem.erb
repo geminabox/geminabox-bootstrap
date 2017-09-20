@@ -35,11 +35,12 @@ $ gem install <%= name %> -v <%= version.number %>
               <p>This action is irreversible</p>
 
               <p>
-
-              <form class="form delete-form" style="margin: 0px;" method="post" action="<%= url("/gems/#{version.gemfile_name}.gem") %>" onSubmit="if(!confirm('Are you sure you want to delete version <%= version.number %> of <%= name %>')){return false;}">
-                <input type="hidden" name="_method" value="DELETE"/>
-                <button class="btn btn-danger" type="submit">Delete Version <%= version.number %></button>
-              </form>
+              <% if Geminabox.allow_delete %>
+                <form class="form delete-form" style="margin: 0px;" method="post" action="<%= url("/gems/#{version.gemfile_name}.gem") %>" onSubmit="if(!confirm('Are you sure you want to delete version <%= version.number %> of <%= name %>')){return false;}">
+                  <input type="hidden" name="_method" value="DELETE"/>
+                  <button class="btn btn-danger" type="submit">Delete Version <%= version.number %></button>
+                </form>
+              <% end %>
               </p>
             </div>
           </div>
