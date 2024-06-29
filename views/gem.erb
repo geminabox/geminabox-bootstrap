@@ -15,12 +15,12 @@
           <div class="tab-pane" id="version-<%= version.number.to_s.gsub '.', '_' %>">
             <h4>Add it to your Gemfile (recommended)</h4>
             <pre class="prettyprint linenums languague-ruby">
-source '<%= url '/' %>">'
+source '<%= url '/' %>'
 
 gem '<%= name %>', '<%= version.number %>'</pre>
             <h4>...or install it globally</h4>
             <pre>
-$ gem sources -a <%= url '/' %>">
+$ gem sources -a <%= url '/' %>
 $ gem install <%= name %> -v <%= version.number %>
             </pre>
             <h4>...or download it</h4>
